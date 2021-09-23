@@ -1,6 +1,19 @@
 import { Col } from 'react-bootstrap'
-export function PlayerViewer(): JSX.Element{
+import { Player } from '../interfaces/player'
+export function PlayerViewer({activePlayer}: {activePlayer: Player}): JSX.Element{
     return(
-        <Col>Player Viewer</Col>
+        <Col>
+        <h1>Player Viewer</h1>
+        <div>Current player</div>
+        {activePlayer.Name}
+        <br/>
+        {"Per Game Stats"}
+        <br/>
+        {"Points: " + activePlayer.PTS}
+        <br/>
+        {"Assists: "+ activePlayer.AST}
+        <br/>
+        {"Rebounds: "+activePlayer.TRB}
+        </Col>
     )
 }

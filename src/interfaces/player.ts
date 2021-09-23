@@ -13,7 +13,7 @@ export interface Player {
     MP:number
     FG:number
     FGA:number
-    FGpercent:string
+    FGPercent:string
     ThreePt:number
     ThreePtAttempts:number
     ThreePtPercent:string
