@@ -43,6 +43,7 @@ export function PlayerSelection({setPlayerOne, setPlayerTwo}: {setPlayerOne: (p:
                 }> --{'>'}
             </Button>
         </Row>
+        
     </Col>
     )
 }
