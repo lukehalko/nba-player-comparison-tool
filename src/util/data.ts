@@ -2,6 +2,13 @@ export function getRandomElement<T>(items: T[]): T{
     return items[Math.floor(Math.random()*items.length)];
 }
 
-export function getNextElement<T>(items: T[], i:number): T{
-    return items[i++];
+export function handleSubmit<HTMLFormElement>(x:HTMLFormElement):boolean{
+    alert(x)
+    try{
+        console.log(x)
+    }
+    catch(e){
+        console.log(e)
+    }
+    return true
 }
