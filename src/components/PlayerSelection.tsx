@@ -3,7 +3,7 @@ import { Player } from '../interfaces/player'
 import PLAYERS from '../assets/players.json';
 import { getRandomElement } from '../util/data';
 import { findRenderedDOMComponentWithTag } from 'react-dom/test-utils';
-import { handleSubmit } from '../util/data'
+
 let i = 0;
 export function PlayerSelection({setPlayerOne, setPlayerTwo}: {setPlayerOne: (p: Player)=>void, setPlayerTwo: (p: Player)=>void}): JSX.Element {
     return(
