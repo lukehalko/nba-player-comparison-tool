@@ -16,8 +16,10 @@ const [activePlayerTwo, setActivePlayerTwo] = useState<Player>(PLAYERS[1] as Pla
   return (
     <Container>
         <Row>
+          <Col>
           <PlayerSelection setPlayerOne={setActivePlayerOne} setPlayerTwo={setActivePlayerTwo}></PlayerSelection>
-          {/*SearchBox></SearchBox>*/}
+          <SearchBox setPlayerOne={setActivePlayerOne} setPlayerTwo={setActivePlayerTwo}></SearchBox>
+          </Col>
           <PlayerViewer firstPlayer={activePlayerOne} secondPlayer={activePlayerTwo}></PlayerViewer>
         </Row>
     </Container>

@@ -7,7 +7,7 @@ import { findRenderedDOMComponentWithTag } from 'react-dom/test-utils';
 let i = 0;
 export function PlayerSelection({setPlayerOne, setPlayerTwo}: {setPlayerOne: (p: Player)=>void, setPlayerTwo: (p: Player)=>void}): JSX.Element {
     return(
-    <Col>
+    <div>
     <h1>Select Player</h1>
     {/*<Form>
         <Row className="mb-3">
@@ -23,7 +23,6 @@ export function PlayerSelection({setPlayerOne, setPlayerTwo}: {setPlayerOne: (p:
     </Form>
     <br/>*/}
             {setPlayerOne /*why is this here*/}
-        <Row md={5}>
             Player 1
             <Button onClick={() =>
                 i>0 ?
@@ -39,8 +38,6 @@ export function PlayerSelection({setPlayerOne, setPlayerTwo}: {setPlayerOne: (p:
                 setPlayerOne(PLAYERS[i] as Player)
                 }> --{'>'}
             </Button>
-        </Row>
-            <Row md={5}>
             Player 2
             <Button onClick={() =>
                 i>0 ?
@@ -56,7 +53,7 @@ export function PlayerSelection({setPlayerOne, setPlayerTwo}: {setPlayerOne: (p:
                 setPlayerTwo(PLAYERS[i] as Player)
                 }> --{'>'}
             </Button>
-        </Row>
-    </Col>
+            </div>
     )
+
 }
